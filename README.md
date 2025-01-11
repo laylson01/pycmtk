@@ -25,7 +25,7 @@ Aqui está uma captura de tela da interface
 - **Integração com banco de dados mais robusto**: Em breve, será implementada uma solução de banco de dados mais escalável e eficiente.
 - **Integração com APIs externas**: O sistema será expandido com a integração de APIs para facilitar a troca de dados com outros sistemas.
 - **Validação de campos**: Serão implementadas regras para garantir que todos os campos de entrada sejam validados corretamente, aumentando a qualidade dos dados.
-- **Relatóri
+  
 ## Requisitos
 
 - Python 3.x
