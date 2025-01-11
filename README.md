@@ -2,6 +2,17 @@
 
 Este projeto é uma aplicação de gestão empresarial com funcionalidades para cadastro de clientes, pesquisa de informações, e geração de relatórios a partir de dados armazenados em arquivos Excel. A interface foi desenvolvida utilizando `customtkinter`, com temas e widgets modernos, e interage com um banco de dados SQLite para armazenar e gerenciar as informações dos clientes.
 
+## Descrição do Projeto
+
+O sistema foi desenvolvido para atender à necessidade de uma empresa que possuía centenas de clientes, os quais precisavam ser cadastrados e mantidos em uma base de dados local. Para isso, a solução utiliza tanto um arquivo Excel para armazenamento e atualização dos dados, quanto um banco de dados `.db` como backup.
+
+## Imagem da Interface
+
+Aqui está uma captura de tela da interface
+
+![Interface do ERP](https://raw.githubusercontent.com/laylson01/pycmtk/refs/heads/main/Cliente_tab.png)
+
+
 ## Funcionalidades
 
 - **Cadastro de Clientes**: Adicione clientes ao sistema, preenchendo informações como nome, CPF, endereço, email, entre outros.
@@ -9,6 +20,12 @@ Este projeto é uma aplicação de gestão empresarial com funcionalidades para 
 - **Relatórios**: Carrega e exibe dados de clientes armazenados em um arquivo Excel com a opção de visualizar em formato de tabela.
 - **Interface de Usuário**: Interface gráfica moderna com tabs para navegar entre as diferentes funcionalidades (Home, Clientes, Produtos, Vendas, Relatórios).
 
+## Melhoria Planejadas
+
+- **Integração com banco de dados mais robusto**: Em breve, será implementada uma solução de banco de dados mais escalável e eficiente.
+- **Integração com APIs externas**: O sistema será expandido com a integração de APIs para facilitar a troca de dados com outros sistemas.
+- **Validação de campos**: Serão implementadas regras para garantir que todos os campos de entrada sejam validados corretamente, aumentando a qualidade dos dados.
+- **Relatóri
 ## Requisitos
 
 - Python 3.x
@@ -23,7 +40,7 @@ Este projeto é uma aplicação de gestão empresarial com funcionalidades para 
 Você pode instalar as dependências usando o `pip`:
 
 ```bash
-pip install customtkinter tkcalendar pandas openpyxl
+pip install customtkinter tkcalendar pandas openpyxl os-sys
 ```
 
 ## Estrutura do Projeto
@@ -53,12 +70,3 @@ Sinta-se à vontade para contribuir para o projeto. Para isso, siga as etapas ab
 2. Crie uma nova branch (`git checkout -b feature/nova-feature`).
 3. Faça suas alterações.
 4. Envie um pull request com uma descrição detalhada das mudanças.
-## Imagem da Interface
-
-Aqui está uma captura de tela da interface do ERP Empresarial:
-
-![Interface do ERP](https://raw.githubusercontent.com/laylson01/pycmtk/refs/heads/main/Cliente_tab.png)
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
