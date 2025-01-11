@@ -57,7 +57,7 @@ Sinta-se à vontade para contribuir para o projeto. Para isso, siga as etapas ab
 
 Aqui está uma captura de tela da interface do ERP Empresarial:
 
-![Interface do ERP](images/interface.png)
+![Interface do ERP](https://raw.githubusercontent.com/laylson01/pycmtk/refs/heads/main/Cliente_tab.png)
 
 ## Licença
 
