@@ -117,8 +117,7 @@ class DashboardEmpresarial:
 
         # Criação da tabela
         self.tree = ttk.Treeview(table_frame, columns=(
-            "Nome", "CPF", "RG", "Sexo", "Telefone", "Endereço", "PIS/NIS", "NIP", "CEI", "RGP", "Email",
-            "Título de Eleitor", "Data de Nascimento", "Data Início Atividade"), show="headings")
+            "Nome", "CPF", "RG", "Sexo", "Telefone", "Endereço", "PIS/NIS", "NIP", "CEI", "RGP", "Email", "Titulo de Eleitor","Data de Nascimento","Data Inicio Atividade"), show="headings")
 
         # Configuração das colunas
         for col in self.tree["columns"]:
@@ -213,19 +212,33 @@ class DashboardEmpresarial:
     def format_cliente_info(self, cliente):
         return f"""
         Nome: {cliente[0]}, 
+
         CPF: {cliente[1]}
+
         RG: {cliente[2]}
-        Data de Nascimento: {cliente[3]}
-        Sexo: {cliente[4]}
-        Telefone: {cliente[5]}
-        Endereço: {cliente[6]}
-        PIS/NIS: {cliente[7]}
-        NIP: {cliente[8]}
-        CEI: {cliente[9]}
-        RGP: {cliente[10]}
-        Email: {cliente[11]}
-        Data Inicio Atividade: {cliente[12]}
-        Título de Eleitor: {cliente[13]}
+
+        Sexo: {cliente[3]}
+
+        Telefone: {cliente[4]}
+
+        Endereço: {cliente[5]}
+
+        PIS/NIS: {cliente[6]}
+
+        NIP: {cliente[7]}
+
+        CEI: {cliente[8]}
+
+        RGP: {cliente[9]}
+
+        Email: {cliente[10]}
+
+        Título de Eleitor: {cliente[11]}
+
+        Data de Nascimento: {cliente[12]}
+
+        Data Inicio Atividade: {cliente[13]}
+
         """
 
     def copiar_informacoes(self):

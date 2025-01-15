@@ -23,7 +23,7 @@ class ExcelHandler:
             workbook = Workbook()
             sheet = workbook.active
             sheet.title = "Clientes"
-            headers = ["Nome", "CPF", "RG", "Data de Nascimento", "Sexo", "Telefone", "Endereço", "PIS/NIS", "NIP", "CEI", "RGP", "Email", "Data Inicio Atividade", "Titulo de Eleitor"]
+            headers = [ "Nome", "CPF", "RG", "Sexo", "Telefone", "Endereço", "PIS/NIS", "NIP", "CEI", "RGP", "Email", "Titulo de Eleitor","Data de Nascimento","Data Inicio Atividade"]
             sheet.append(headers)
             self._format_sheet(sheet)
             return workbook

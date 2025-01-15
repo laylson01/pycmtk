@@ -13,7 +13,6 @@ class Database:
                 nome TEXT,
                 cpf TEXT,
                 rg TEXT,
-                data_nascimento TEXT,
                 sexo TEXT,
                 telefone TEXT,
                 endereco TEXT,
@@ -22,15 +21,17 @@ class Database:
                 cei TEXT,
                 rgp TEXT,
                 email TEXT,
-                data_inicio_atividade TEXT,
-                titulo_eleitor TEXT
+                titulo_eleitor TEXT,
+                data_nascimento TEXT,
+                data_inicio_atividade TEXT
             )
         """)
+
         self.conn.commit()
 
     def insert_cliente(self, cliente_data):
         self.cursor.execute("""
-            INSERT INTO clientes (nome, cpf, rg, data_nascimento, sexo, telefone, endereco, pis_nis, nip, cei, rgp, email, data_inicio_atividade, titulo_eleitor)
+            INSERT INTO clientes (nome, cpf, rg, sexo, telefone, endereco, pis_nis, nip, cei, rgp, email, titulo_eleitor, data_nascimento, data_inicio_atividade)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, cliente_data)
         self.conn.commit()
