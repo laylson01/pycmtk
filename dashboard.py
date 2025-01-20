@@ -8,6 +8,12 @@ import pandas as pd  # Importando pandas para manipular dados do Excel
 from openpyxl import load_workbook
 import sqlite3
 
+from PIL import Image
+
+
+
+
+
 class DashboardEmpresarial:
     def __init__(self, root):
         self.root = root
@@ -15,6 +21,9 @@ class DashboardEmpresarial:
         self.root.geometry("1200x700")
         ctk.set_appearance_mode("dark")
         ctk.set_default_color_theme("blue")
+        self.root = root
+
+        self.root.iconbitmap("icone.ico")
 
         self.database = Database("clientes.db")
         self.excel_handler = ExcelHandler("clientes.xlsx")
@@ -273,7 +282,9 @@ class DashboardEmpresarial:
                 input_field.delete(0, ctk.END)  # Limpa campos de entrada (Entry ou CTkEntry)
 
 
-if __name__ == "__main__":
-    root = ctk.CTk()
-    app = DashboardEmpresarial(root)
-    root.mainloop()
+        # Abra a imagem PNG
+
+
+        # Converta a imagem para o formato ICO
+        img.save('icone.ico', format='ICO', sizes=[(32,32)])
+
